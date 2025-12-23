@@ -234,17 +234,17 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 70px;
-  margin-right: 8px;
+  max-height: 65px;
+  margin-right: 6px;
 }
 
 .header .logo h1 {
-  font-weight: 700;
-  font-size: 30px;
-  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: rgb(35, 35, 35);
 }
 
 .header .btn-getstarted,
@@ -517,6 +517,9 @@ h6 {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+  .btn-getstarted{
+    display: none;
   }
 }
 
@@ -880,43 +883,60 @@ section,
   align-items: center;
   justify-content: center;
   color: var(--default-color);
+  overflow: hidden;
 }
 
-.hero img {
+/* Carousel full cover */
+.hero .carousel,
+.hero .carousel-inner,
+.hero .carousel-item,
+.hero .carousel-item img {
   position: absolute;
   inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 1;
 }
 
-.hero:before {
+/* Hero images */
+.hero .carousel-item img {
+  object-fit: cover;
+  z-index: 1;
+  animation: heroZoom 8s ease-in-out infinite;
+}
+
+/* Dark overlay */
+.hero::before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
+  background: color-mix(in srgb, var(--background-color), transparent 80%);
   position: absolute;
   inset: 0;
   z-index: 2;
 }
 
+/* Content on top */
 .hero .container {
   position: relative;
   z-index: 3;
+  text-align: center;
 }
 
+/* Heading */
 .hero h2 {
-  margin: 0;
+  margin-left: 0px;
+  text-align: left;
   font-size: 48px;
   font-weight: 700;
 }
 
+/* Subtitle */
 .hero p {
+  text-align: left;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 10px 0 0 0;
   font-size: 24px;
 }
 
+/* Button */
 .hero .btn-get-started {
   font-weight: 500;
   font-size: 15px;
@@ -928,13 +948,32 @@ section,
   margin-top: 30px;
   border: 2px solid var(--default-color);
   color: var(--default-color);
+  text-decoration: none;
 }
 
 .hero .btn-get-started:hover {
   background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
+/* Disable carousel arrows (clean look) */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+/* Zoom animation */
+@keyframes heroZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -1229,6 +1268,43 @@ section,
 
 .courses .trainer .trainer-rank .user-icon {
   font-size: 22px;
+}
+
+.read-morer {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  width: 36%;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 24px 12px 24px;
+  border-radius: 50px;
+  border: 0.2vh solid #ffffff00;
+  transition: 0.8s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.read-morer i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.8s;
+}
+
+.read-morer:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border: 0.2vh solid var(--accent-color);
+  color: var(--accent-color);
+  width: 100%;
+  transition: 0.6s ease-in-out;
+}
+
+.read-morer:hover i {
+  margin-left: 10px;
+  transition: 0.6s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -1646,10 +1722,8 @@ section,
 }
 
 .events .card-img {
-  width: calc(100% + 60px);
-  margin-left: -30px;
+  width: 100%;
   overflow: hidden;
-  z-index: 9;
   border-radius: 0;
 }
 
@@ -1658,16 +1732,32 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
+.events .card-img .news-video {
+  overflow: hidden;
+  border: none;
+  width: 100%;
+  height: 400px;
+}
+
 .events .card-body {
-  z-index: 10;
   background: var(--surface-color);
   border-top: 4px solid var(--surface-color);
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin-top: -60px;
   transition: 0.3s;
 }
 
+.events .card-body-img {
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  background-color: #ededed8c;
+  margin-top: 5vh;
+}
+
+@media (max-width: 1199px) {
+  .events .card-img .news-video{
+    height: 25vh;
+  }
+}
 .events .card-title {
   font-weight: 700;
   text-align: center;
