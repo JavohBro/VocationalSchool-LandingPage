@@ -33,40 +33,57 @@
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
+  
       <a href="../index.html" class="logo d-flex align-items-center me-auto">
         <img src="../assets/img/favicon.png" alt="">
         <h1>FARG'ONA SHAHAR <br>1-SON TEXNIKUM</h1>
       </a>
-
+  
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html" class="active">Bosh sahifa<br></a></li>
-          <li><a href="../about.html">Haqida</a></li>
-          <li><a href="../courses.html">Yo'nalishlar</a></li>
-          <li><a href="../trainers.html">Ustozlar</a></li>
-          <li><a href="../events.html">Tadbirlar</a></li>
-          <li><a href="../contact.html">Aloqa</a></li>
+          <li><a href="../index.html" data-lang="home">Bosh sahifa<br></a></li>
+          <li><a href="../about.html" data-lang="kafedra">Kafedra</a></li>
+          <li class="dropdown"><a href="#" class="active" data-lang="courses"><span>Yo'nalishlar</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="../courses.html" data-lang="courseTypeOne">Kunduzgi ta'lim</a></li>
+              <li><a href="../dual-study-courses.html" data-lang="courseTypeTwo">Dual ta'lim</a></li>
+              <li><a href="#" data-lang="courseTypeThree">Sirtqi ta'lim</a></li>
+              <li><a href="#" data-lang="courseTypeFour">Qisqa muddatli ta'lim</a></li>
+            </ul>
+          </li>
+          <li><a href="../trainers.html" data-lang="teachers">Ustozlar</a></li>
+          <li><a href="../events.html" data-lang="events">Tadbirlar</a></li>
+          <li><a href="../contact.html" data-lang="contact">Aloqa</a></li>
+          <li>
+            <select class="form-select" id="languageSelect" onchange="changeLanguage(this.value)">
+              <option value="uzb">UZB</option>
+              <option value="eng">ENG</option>
+              <option value="rus">РУС</option>
+            </select>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="../courses.html">Boshlash</a>
-
+  
+      <a class="btn-getstarted" href="https://my.edu.uz/" target="_blank" data-lang="apply">Roʻyxatdan oʻtish</a>
+  
     </div>
   </header>
 
   <main class="main">
-
+  
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1><i class="bi bi-person-lines-fill"></i> Yo'nalish tafsilotlari</h1>
-              <p class="mb-0">Bu yerda kurs haqidagi qisqacha tavsif bo‘lishi mumkin. Masalan: Bizning kurslarimiz sizga
-                yangi ko‘nikmalar o‘rgatadi va karyerangizni rivojlantirishga yordam beradi.</p>
+              <h1><i class="bi bi-person-lines-fill"></i> <span data-lang="courseDetailsTitle">Yo'nalish
+                  tafsilotlari</span></h1>
+              <p class="mb-0" data-lang="courseDetailsDesc">Bu yerda kurs haqidagi qisqacha tavsif bo'lishi mumkin.
+                Masalan: Bizning kurslarimiz sizga
+                yangi ko'nikmalar o'rgatadi va karyerangizni rivojlantirishga yordam beradi.</p>
             </div>
           </div>
         </div>
@@ -74,104 +91,106 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="../index.html">Bosh sahifa</a></li>
-            <li class="current">Yo'nalish tafsilotlari</li>
+            <li><a href="../index.html" data-lang="home">Bosh sahifa</a></li>
+            <li class="current" data-lang="breadcrumbDetails">Yo'nalish tafsilotlari</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
-
+  
     <section id="courses-course-details" class="courses-course-details section">
-    
+  
       <div class="container" data-aos="fade-up">
-    
+  
         <div class="row">
           <div class="col-lg-8">
             <img src="../assets/img/course_details/coding.jpg" class="img-fluid" alt="">
-            <h3>Raqamli axborotlarni qayta ishlash ustasi: Ma'lumotlarni qayta ishlash va tahlil</h3>
-            <p>
+            <h3 data-lang="dataProcessingCourseTitle">Raqamli axborotlarni qayta ishlash ustasi: Ma'lumotlarni qayta
+              ishlash va tahlil</h3>
+            <p data-lang="dataProcessingCourseDesc">
               Raqamli axborotlarni qayta ishlash ustasi kursi davomida talabalar ma'lumotlar bazalari bilan ishlash,
-              dasturlash asoslari, ma'lumotlarni tahlil qilish va raqamli texnologiyalarni qo‘llash ko‘nikmalarini
-              egallaydilar. Kurs nazariy va amaliy mashg‘ulotlar orqali o‘tkaziladi, real ma'lumotlar loyihalari ustida
-              ishlanadi. Kursni tugatgandan so‘ng siz professional ma'lumotlar mutaxassisi sifatida IT va biznes sohasida
-              ishlay olasiz va axborotlarni samarali qayta ishlash imkoniyatiga ega bo‘lasiz.
+              dasturlash asoslari, ma'lumotlarni tahlil qilish va raqamli texnologiyalarni qo'llash ko'nikmalarini
+              egallaydilar. Kurs nazariy va amaliy mashg'ulotlar orqali o'tkaziladi, real ma'lumotlar loyihalari ustida
+              ishlanadi. Kursni tugatgandan so'ng siz professional ma'lumotlar mutaxassisi sifatida IT va biznes sohasida
+              ishlay olasiz va axborotlarni samarali qayta ishlash imkoniyatiga ega bo'lasiz.
             </p>
           </div>
           <div class="col-lg-4">
-    
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Kurs nomi</h5>
-              <p>Raqamli axborotlarni qayta ishlash ustasi</p>
+              <h5 data-lang="courseName">Kurs nomi</h5>
+              <p data-lang="dataProcessingCourseName">Raqamli axborotlarni qayta ishlash ustasi</p>
             </div>
-    
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>O'qish muddati</h5>
-              <p>2 Yil / 4 Simester</p>
+              <h5 data-lang="duration">O'qish muddati</h5>
+              <p data-lang="durationValue">2 Yil / 4 Simester</p>
             </div>
-    
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>O'qish shakli</h5>
-              <p>Kunduzgi</p>
+              <h5 data-lang="studyForm">O'qish shakli</h5>
+              <p data-lang="studyFormValue">Kunduzgi</p>
             </div>
-
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Diplom toifasi</h5>
-              <p> O'rta maxsus</p>
+              <h5 data-lang="diplomaCategory">Diplom toifasi</h5>
+              <p data-lang="diplomaValue">O'rta maxsus</p>
             </div>
-    
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Dars jadvali</h5>
-              <p>08:00 - 12:50</p>
+              <h5 data-lang="schedule">Dars jadvali</h5>
+              <p data-lang="scheduleValue">08:00 - 12:50</p>
             </div>
-    
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Umum ta'lim fanlar</h5>
-              <p>10 ta</p>
+              <h5 data-lang="generalSubjects">Umum ta'lim fanlar</h5>
+              <p data-lang="generalSubjectsValue">10 ta</p>
             </div>
-            
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Umum kasbiy fanlar</h5>
-              <p>5 ta</p>
+              <h5 data-lang="professionalSubjects">Umum kasbiy fanlar</h5>
+              <p data-lang="professionalSubjectsValue5">5 ta</p>
             </div>
-            
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Maxsus fanlar</h5>
-              <p>6 ta</p>
+              <h5 data-lang="specialSubjects">Maxsus fanlar</h5>
+              <p data-lang="specialSubjectsValue">6 ta</p>
             </div>
-            
+  
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>O'quv amaliyoti</h5>
-              <p>3 ta</p>
+              <h5 data-lang="practicalTraining">O'quv amaliyoti</h5>
+              <p data-lang="practicalTrainingValue">3 ta</p>
             </div>
           </div>
         </div>
-    
+  
       </div>
-    
+  
     </section><!-- /Courses Course Details Section -->
-    
+  
     <!-- Tabs Section -->
     <section id="tabs" class="tabs section">
-    
+  
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
+  
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Birinchi semestr</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1" data-lang="semester1">Birinchi
+                  semestr</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Ikkinchi semestr</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2" data-lang="semester2">Ikkinchi semestr</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Uchinchi semestr</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3" data-lang="semester3">Uchinchi semestr</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">To‘rtinchi semestr</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4" data-lang="semester4">To'rtinchi semestr</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Yakuniy bosqich</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5" data-lang="semesterFinal">Yakuniy bosqich</a>
               </li>
             </ul>
           </div>
@@ -180,12 +199,14 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Raqamli axborotlar asoslari</h3>
-                    <p class="fst-italic">Bu bo‘limda ma'lumotlar turlari, dasturlash asoslari va ma'lumotlar bazalari bilan
+                    <h3 data-lang="dataProcessingSem1Title">Raqamli axborotlar asoslari</h3>
+                    <p class="fst-italic" data-lang="dataProcessingSem1Subtitle">Bu bo'limda ma'lumotlar turlari,
+                      dasturlash asoslari va ma'lumotlar bazalari bilan
                       tanishuv.</p>
-                    <p>Semestr davomida talabalar raqamli axborotlarni saqlash va qayta ishlashning asosiy usullarini
-                      o‘rganadilar, oddiy dasturlarni yozadilar va birinchi loyihalarni amalga oshiradilar. Natijada
-                      mustahkam nazariy poydevor hosil bo‘ladi.</p>
+                    <p data-lang="dataProcessingSem1Desc">Semestr davomida talabalar raqamli axborotlarni saqlash va qayta
+                      ishlashning asosiy usullarini
+                      o'rganadilar, oddiy dasturlarni yozadilar va birinchi loyihalarni amalga oshiradilar. Natijada
+                      mustahkam nazariy poydevor hosil bo'ladi.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="../assets/img/tabs/tab-1.png" alt="" class="img-fluid">
@@ -195,10 +216,13 @@
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Ma'lumotlarni tahlil qilish</h3>
-                    <p class="fst-italic">Ma'lumotlar statistikasi va tahlil vositalari.</p>
-                    <p>Talabalar ma'lumotlarni tahlil qilish usullarini o‘rganadilar, Python va SQL kabi tillarni
-                      qo‘llaydilar, real ma'lumotlar to‘plamlarini qayta ishladilar va guruh loyihalarida ishtirok etadilar.
+                    <h3 data-lang="dataProcessingSem2Title">Ma'lumotlarni tahlil qilish</h3>
+                    <p class="fst-italic" data-lang="dataProcessingSem2Subtitle">Ma'lumotlar statistikasi va tahlil
+                      vositalari.</p>
+                    <p data-lang="dataProcessingSem2Desc">Talabalar ma'lumotlarni tahlil qilish usullarini o'rganadilar,
+                      Python va SQL kabi tillarni
+                      qo'llaydilar, real ma'lumotlar to'plamlarini qayta ishladilar va guruh loyihalarida ishtirok
+                      etadilar.
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -209,10 +233,12 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Ilg‘or qayta ishlash texnikalari</h3>
-                    <p class="fst-italic">Big data va mashinaviy o‘rganish asoslari.</p>
-                    <p>Bu bo‘limda talabalar katta ma'lumotlar to‘plamlarini qayta ishlash, ma'lumotlarni vizualizatsiya
-                      qilish va oddiy algoritmlarni o‘rganadilar, shuningdek, individual loyihalar ustida ishlaydilar.</p>
+                    <h3 data-lang="dataProcessingSem3Title">Ilg'or qayta ishlash texnikalari</h3>
+                    <p class="fst-italic" data-lang="dataProcessingSem3Subtitle">Big data va mashinaviy o'rganish
+                      asoslari.</p>
+                    <p data-lang="dataProcessingSem3Desc">Bu bo'limda talabalar katta ma'lumotlar to'plamlarini qayta
+                      ishlash, ma'lumotlarni vizualizatsiya
+                      qilish va oddiy algoritmlarni o'rganadilar, shuningdek, individual loyihalar ustida ishlaydilar.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="../assets/img/tabs/tab-3.png" alt="" class="img-fluid">
@@ -222,9 +248,10 @@
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Amaliyot va loyihalar</h3>
-                    <p class="fst-italic">IT kompaniyalarida amaliyot o‘tash.</p>
-                    <p>Semestr davomida talabalar real korxonalarda amaliyot o‘tadilar, mustaqil ma'lumotlar loyihalarini
+                    <h3 data-lang="dataProcessingSem4Title">Amaliyot va loyihalar</h3>
+                    <p class="fst-italic" data-lang="dataProcessingSem4Subtitle">IT kompaniyalarida amaliyot o'tash.</p>
+                    <p data-lang="dataProcessingSem4Desc">Semestr davomida talabalar real korxonalarda amaliyot o'tadilar,
+                      mustaqil ma'lumotlar loyihalarini
                       ishlab chiqadilar va ularni himoya qiladilar.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -235,10 +262,11 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Sertifikat va karyera</h3>
-                    <p class="fst-italic">Kursni muvaffaqiyatli tugatganlik haqida diplom.</p>
-                    <p>Kurs yakunida talabalar o‘rta maxsus diplom oladilar, shuningdek, IT sohasida ish topish bo‘yicha
-                      maslahatlar va karyera rivojlantirish bo‘yicha tavsiyalar beriladi.</p>
+                    <h3 data-lang="semFinalTitle">Kasb, malaka va diplom</h3>
+                    <p class="fst-italic" data-lang="semFinalSubtitle">Ta'lim muassasasini muvaffaqiyatli tugatganlik
+                      haqida diplom.</p>
+                    <p data-lang="semFinalDesc">Talabalarga o'rta maxsus diplom oladilar, shuningdek, sohasida ish topish
+                      bo'yicha maslahatlar va karyera rivojlantirish bo'yicha tavsiyalar beriladi.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="../assets/img/tabs/tab-5.png" alt="" class="img-fluid">
@@ -248,9 +276,9 @@
             </div>
           </div>
         </div>
-    
+  
       </div>
-    
+  
     </section><!-- /Tabs Section -->
   </main>
 
@@ -259,60 +287,56 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/favicon.png" alt="">
-            <span class="sitename">Farg'ona Shahar 1-son Texnikum</span>
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <img src="../assets/img/favicon.png" alt="">
+            <span class="sitename">Farg'ona shahar<br>1-son texnikum</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Yoshlik ko'chasi 18B</p>
-            <p>Farg'ona, O'zbekiston</p>
-            <p class="mt-3"><strong>Telefon:</strong> <span>+998 73 244 85 54</span></p>
+            <p data-lang="footerStreet">Yoshlik ko'chasi 18B</p>
+            <p data-lang="footerRegion">Farg'ona, O'zbekiston</p>
+            <p class="mt-3"><strong data-lang="footerPhone">Telefon:</strong> <span>+998 73 244 85 54</span></p>
             <p><strong>Email:</strong> <span>fergana-khm@umail.uz</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-telegram"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com/groups/443316034555479/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/khm_raqi_2_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                class="bi bi-instagram"></i></a>
           </div>
         </div>
   
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Foydali havolalar</h4>
+          <h4 data-lang="footerLinks">Foydali havolalar</h4>
           <ul>
-            <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="about.html">Biz haqimizda</a></li>
-            <li><a href="courses.html">Yonalishlar</a></li>
-            <li><a href="events.html">Tadbirlar</a></li>
-            <li><a href="contact.html">Yordam</a></li>
+            <li><a href="../#" data-lang="footerHome">Bosh sahifa</a></li>
+            <li><a href="../about.html" data-lang="footerAbout">Biz haqimizda</a></li>
+            <li><a href="../courses.html" data-lang="footerCourses">Yonalishlar</a></li>
+            <li><a href="../events.html" data-lang="footerEvents">Tadbirlar</a></li>
+            <li><a href="../contact.html" data-lang="footerHelp">Yordam</a></li>
           </ul>
         </div>
   
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Bizning xizmatlarimiz</h4>
+          <h4 data-lang="footerServices">Bizning xizmatlarimiz</h4>
           <ul>
-            <li><a href="contact.html">Veb-dizayn</a></li>
-            <li><a href="contact.html">Veb-dasturlash</a></li>
-            <li><a href="contact.html">Mahsulot boshqaruvi</a></li>
-            <li><a href="contact.html">Marketing</a></li>
-            <li><a href="contact.html">Grafik dizayn</a></li>
+            <li><a href="../contact.html" data-lang="serviceWebDesign">Veb-dizayn</a></li>
+            <li><a href="../contact.html" data-lang="serviceWebDev">Veb-dasturlash</a></li>
+            <li><a href="../contact.html" data-lang="serviceProduct">Mahsulot boshqaruvi</a></li>
+            <li><a href="../contact.html" data-lang="serviceMarketing">Marketing</a></li>
+            <li><a href="../contact.html" data-lang="serviceGraphic">Grafik dizayn</a></li>
           </ul>
         </div>
   
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Bizning yangiliklar xatimiza obuna bo'ling</h4>
-          <p>Mahsulot va xizmatlarimiz haqidagi so'nggi yangiliklarni oling!</p>
+          <h4 data-lang="footerNewsletter">Bizning yangiliklar xatimiga obuna bo'ling</h4>
+          <p data-lang="footerNewsletterDesc">Mahsulot va xizmatlarimiz haqidagi so'nggi yangiliklarni oling!</p>
         </div>
       </div>
     </div>
   
     <div class="container copyright text-center mt-4">
-      <p>© <span>Mualliflik huquqi</span> <strong class="px-1 sitename">2025 Farg'ona Shahar 1-son Texnikum</strong>
-        <span>Barcha huquqlar
-          himoyalangan</span></p>
-      <!-- <div class="credits">
-          Bu website o'zimizning ustozlarimizdan biri <a href="https://bootstrapmade.com/">Mo'mboyev Azizbek</a> tomonidan dasturlangan. O'quvchisi <a href="https://themewagon.com">Javohir Salohiddinov</a> o'z hissasini qo'shgan.
-        </div> -->
+      <p>© <span data-lang="footerCopyright">Mualliflik huquqi</span> <strong class="px-1 sitename">2025 Farg'ona Shahar
+          1-son Texnikum</strong> <span data-lang="footerRights">Barcha huquqlar himoyalangan</span></p>
     </div>
   
   </footer>
@@ -334,6 +358,7 @@
 
   <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/translation.js"></script>
 
 </body>
 

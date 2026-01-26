@@ -774,7 +774,7 @@ h6 {
   --heading-color: var(--contrast-color);
   color: var(--default-color);
   /* background-color: var(--background-color); */
-  background: url("../img/widebg2.jpg") center/cover no-repeat;
+  background: url("../img/bgpic2.png") bottom/cover no-repeat;
   position: relative;
 }
 
@@ -792,7 +792,7 @@ h6 {
 }
 
 .page-title nav {
-  background-color: color-mix(in srgb, var(--accent-color) 90%, black 5%);
+  background-color: color-mix(in srgb, var(--accent-color) 50%, black 5%);
   padding: 20px 0;
 }
 
@@ -924,7 +924,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
-  text-align: center;
+  text-align: left;
 }
 
 /* Heading */
@@ -1647,7 +1647,7 @@ section,
 
 .trainers .member .member-img {
   margin: 0 80px;
-  border-radius: 50%;
+  border-radius: 5%;
   overflow: hidden;
   position: relative;
 }

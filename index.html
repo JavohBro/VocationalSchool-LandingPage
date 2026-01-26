@@ -15,9 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,30 +36,40 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/favicon.png" alt="">
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-         <h1>FARG'ONA SHAHAR <br>1-SON TEXNIKUM</h1>
+        <h1>FARG'ONA SHAHAR <br>1-SON TEXNIKUM</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Bosh sahifa<br></a></li>
-          <li><a href="about.html">Kafedra</a></li>
-          <li class="dropdown"><a href="#"><span>Yo'nalishlar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="courses.html">Kunduzgi ta'lim</a></li>
-              <li><a href="dual-study-courses.html">Dual ta'lim</a></li>
-              <li><a href="#">Sirtqi ta'lim</a></li>
-              <li><a href="#">Qisqa muddatli ta'lim</a></li>
+          <li><a href="index.html" class="active" data-lang="home">Bosh sahifa</a></li>
+          <li><a href="about.html" data-lang="kafedra">Kafedra</a></li>
+          <li class="dropdown">
+            <a href="#">
+              <span data-lang="courses">Yo'nalishlar</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul> 
+              <li><a href="courses.html" data-lang="courseTypeOne">Kunduzgi ta'lim</a></li>
+              <li><a href="dual-study-courses.html" data-lang="courseTypeTwo">Dual ta'lim</a></li>
+              <li><a href="#" data-lang="courseTypeThree">Sirtqi ta'lim</a></li>
+              <li><a href="#" data-lang="courseTypeFour">Qisqa muddatli ta'lim</a></li>
             </ul>
           </li>
-          <li><a href="trainers.html">Ustozlar</a></li>
-          <li><a href="events.html">Tadbirlar</a></li>
-          <li><a href="contact.html">Aloqa</a></li>
+          <li><a href="trainers.html" data-lang="teachers">Ustozlar</a></li>
+          <li><a href="events.html" data-lang="events">Tadbirlar</a></li>
+          <li><a href="contact.html" data-lang="contact">Aloqa</a></li>
+          <li>
+            <select class="form-select" id="languageSelect" onchange="changeLanguage(this.value)">
+              <option value="uzb">UZB</option>
+              <option value="eng">ENG</option>
+              <option value="rus">РУС</option>
+            </select>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="courses.html">Boshlash</a>
+      <a class="btn-getstarted" href="https://my.edu.uz/" target="_blank" data-lang="apply">Roʻyxatdan oʻtish</a>
 
     </div>
   </header>
@@ -96,22 +104,19 @@
 
       <!-- Content -->
       <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">
-          Kasb — bu<br>hayot poydevori
+        <h2 data-aos="fade-up" data-aos-delay="100" data-lang="heroTitle">
+          Kasb — bu hayot poydevori
         </h2>
-        <p data-aos="fade-up" data-aos-delay="200">
+        <h4 data-aos="fade-up" data-aos-delay="200" data-lang="heroSubtitle">
           Biz yaxshi o'quvchilarni o'z ishini mutaxasisiga aylantiramiz!
-        </p>
+        </h4>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="courses.html" class="btn-get-started">Boshlash</a>
+          <a class="btn-get-started" href="https://my.edu.uz/" target="_blank" data-lang="apply">Roʻyxatdan oʻtish</a>
         </div>
       </div>
 
     </section>
     <!-- /Hero Section -->
-
-
-
     <!-- About Section -->
     <section id="about" class="about section">
 
@@ -124,17 +129,21 @@
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Biz eng yaxshilarni emas — yaxshiroqlarni yetishtiramiz</h3>
-            <p class="fst-italic">
+            <h3 data-lang="aboutTitle">Biz eng yaxshilarni emas — yaxshiroqlarni yetishtiramiz</h3>
+            <p class="fst-italic" data-lang="aboutDesc">
               O'quvchilarimizni real ish bozoriga tayyorlaymiz. Ta'lim jarayoni nazariya va amaliyot uyg'unligida olib
               boriladi.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Amaliy mashg'ulotlarga asoslangan ta'lim.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Tajribali ustozlar bilan o'qish.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Talabgir kasblar bo'yicha tayyorgarlik.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="aboutPoint1">Amaliy mashg'ulotlarga asoslangan
+                  ta'lim.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="aboutPoint2">Tajribali ustozlar bilan
+                  o'qish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="aboutPoint3">Talabgir kasblar bo'yicha
+                  tayyorgarlik.</span></li>
             </ul>
-            <a href="about.html" class="read-more"><span>Batafsil</span><i class="bi bi-arrow-right"></i></a>
+            <a href="about.html" class="read-more"><span data-lang="readMore">Batafsil</span><i
+                class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>
@@ -152,9 +161,9 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1229" data-purecounter-duration="1"
+              <span data-purecounter-start="0" data-purecounter-end="1265" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>O'quvchilar</p>
+              <p data-lang="statsStudents">O'quvchilar</p>
             </div>
           </div>
 
@@ -162,7 +171,7 @@
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>Yo'nalishlar</p>
+              <p data-lang="statsCourses">Yo'nalishlar</p>
             </div>
           </div>
 
@@ -170,7 +179,7 @@
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>Tadbirlar</p>
+              <p data-lang="statsEvents">Tadbirlar</p>
             </div>
           </div>
 
@@ -178,7 +187,7 @@
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>Pedagog & Murabbiylar</p>
+              <p data-lang="statsTeachers">Pedagog & Murabbiylar</p>
             </div>
           </div>
 
@@ -197,14 +206,15 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Nega bizni tanlashadi?</h3>
-              <p>
+              <h3 data-lang="whyTitle">Nega bizni tanlashadi?</h3>
+              <p data-lang="whyDesc">
                 Biz amaliy bilim va real kasblarga yo'naltirilgan ta'lim beramiz. O'quv jarayoni zamonaviy talablar
                 asosida tashkil
                 etilgan bo'lib, har bir o'quvchi kasb egasi bo'lib yetishishiga e'tibor qaratiladi.
               </p>
               <div class="text-center">
-                <a href="about.html" class="more-btn"><span>Batafsil</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="about.html" class="more-btn"><span data-lang="readMore">Batafsil</span> <i
+                    class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -215,18 +225,19 @@
               <div class="col-xl-4">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-clipboard-data"></i>
-                  <h4>Amaliy ta'lim</h4>
-                  <p>Nazariya va amaliyot uyg'unligi asosida olib boriladigan mashg'ulotlar orqali o'quvchilar real ish
-                    jarayoniga
-                    tayyorlanadi.</p>
+                  <h4 data-lang="whyBox1Title">Amaliy ta'lim</h4>
+                  <p data-lang="whyBox1Desc">Nazariya va amaliyot uyg'unligi asosida olib boriladigan mashg'ulotlar
+                    orqali o'quvchilar real ish
+                    jarayoniga tayyorlanadi.</p>
                 </div>
               </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-gem"></i>
-                  <h4>Tajribali ustozlar</h4>
-                  <p>Ko'p yillik tajribaga ega ustozlar tomonidan beriladigan bilim va ko'nikmalar sifatli ta'limni
+                  <h4 data-lang="whyBox2Title">Tajribali ustozlar</h4>
+                  <p data-lang="whyBox2Desc">Ko'p yillik tajribaga ega ustozlar tomonidan beriladigan bilim va
+                    ko'nikmalar sifatli ta'limni
                     ta'minlaydi.</p>
                 </div>
               </div>
@@ -234,8 +245,9 @@
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-inboxes"></i>
-                  <h4>Talabgor kasblar</h4>
-                  <p>Mehnat bozorida yuqori talabga ega bo'lgan kasblar bo'yicha zamonaviy va amaliy ta'lim
+                  <h4 data-lang="whyBox3Title">Talabgor kasblar</h4>
+                  <p data-lang="whyBox3Desc">Mehnat bozorida yuqori talabga ega bo'lgan kasblar bo'yicha zamonaviy va
+                    amaliy ta'lim
                     yo'nalishlari.</p>
                 </div>
               </div>
@@ -259,70 +271,75 @@
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="features-item">
               <i class="bi bi-rulers" style="color: #ffbb2c;"></i>
-              <h3><a href="course_details/tailor-details.html" class="stretched-link">Tikuvchilik</a></h3>
+              <h3><a href="course_details/tailor-details.html" class="stretched-link" data-lang="tailor">Tikuvchilik</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="features-item">
               <i class="bi bi-pencil-fill" style="color: #5578ff;"></i>
-              <h3><a href="course_details/dressdesigner-details.html" class="stretched-link">Tikuv mahsulotlari dizayneri</a></h3>
+              <h3><a href="course_details/dressdesigner-details.html" class="stretched-link"  data-lang="dressDesigner">Tikuv mahsulotlari
+                  dizayneri</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
               <i class="bi bi-bank" style="color: #e80368;"></i>
-              <h3><a href="course_details/bankmanagement-details.html" class="stretched-link">Bank ishi nazoratchisi</a></h3>
+              <h3><a href="course_details/bankmanagement-details.html" class="stretched-link" data-lang="bankManagement">Bank ishi nazoratchisi</a>
+              </h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="features-item">
               <i class="bi bi-intersect" style="color: #e361ff;"></i>
-              <h3><a href="course_details/graphicdesigner-details.html" class="stretched-link">Kompyuter grafikasi va dizayn</a></h3>
+              <h3><a href="course_details/graphicdesigner-details.html" class="stretched-link" data-lang="graphicDesigner">Kompyuter grafikasi va
+                  dizayn</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="features-item">
               <i class="bi bi-code-slash" style="color: #47aeff;"></i>
-              <h3><a href="course_details/raqi-details.html" class="stretched-link">Raqamli axborotlarni qayta ishlash ustas</a></h3>
+              <h3><a href="course_details/raqi-details.html" class="stretched-link" data-lang="computerSciense">Raqamli axborotlarni qayta ishlash
+                  ustas</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
             <div class="features-item">
               <i class="bi bi-plug" style="color: #ffa76e;"></i>
-              <h3><a href="course_details/electroengeneer-details.html" class="stretched-link">Elektromantyor</a></h3>
+              <h3><a href="course_details/electroengeneer-details.html" class="stretched-link" data-lang="electroEngeneer">Elektromantyor</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="features-item">
               <i class="bi bi-tools" style="color: #11dbcf;"></i>
-              <h3><a href="course_details/automechanic-details.html" class="stretched-link">Avtomobil divigatellarini tashxislash va ta'mirlash</a></h3>
+              <h3><a href="course_details/automechanic-details.html" class="stretched-link"  data-lang="auromechanic">Avtomobil divigatellarini
+                  tashxislash va ta'mirlash</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
             <div class="features-item">
               <i class="bi bi-lightning-charge" style="color: #4233ff;"></i>
-              <h3><a href="course_details/welder-details.html" class="stretched-link">Payvandchi</a></h3>
+              <h3><a href="course_details/welder-details.html" class="stretched-link" data-lang="welder">Payvandchi</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
             <div class="features-item">
               <i class="bi bi-egg-fried" style="color: #b2904f;"></i>
-              <h3><a href="course_details/cooking-details.html" class="stretched-link">Oshpazlik</a></h3>
+              <h3><a href="course_details/cooking-details.html" class="stretched-link" data-lang="cook">Oshpazlik</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
             <div class="features-item">
               <i class="bi bi-scissors" style="color: #b20969;"></i>
-              <h3><a href="course_details/barber-details.html" class="stretched-link">Sartarosh</a></h3>
+              <h3><a href="course_details/barber-details.html" class="stretched-link" data-lang="barber">Sartarosh</a></h3>
             </div>
           </div>
         </div>
@@ -335,8 +352,8 @@
     <section id="courses" class="courses section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Yo'nalishlar</h2>
-        <p>Mashxur yo'nalishlar</p>
+        <h2 data-lang="coursesTitle">Yo'nalishlar</h2>
+        <p data-lang="coursesSubtitle">Mashxur yo'nalishlar</p>
       </div>
 
       <div class="container">
@@ -348,14 +365,16 @@
               <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Kompyuter grafikasi va dizayn</p>
-                  <p class="price">2 YIL</p>
+                  <p class="category" data-lang="graphicDesigner">Kompyuter grafikasi va dizayn</p>
+                  <p class="price" data-lang="years">2 YIL</p>
                 </div>
 
-                <h3><a href="course_details/graphicdesigner-details.html">Grafik dizayn va 3D modellashtirish</a></h3>
-                <p class="description">Photoshop, Blender va boshqa dizaynga oid dasturlaridan foydalangan holda vizual dizayn va 3D modellar yaratishni o‘rganasiz.</p>
+                <h3><a href="course_details/graphicdesigner-details.html" data-lang="homeGraphicHeader">Grafik dizayn va 3D modellashtirish</a></h3>
+                <p class="description" data-lang="homeGraphicContext">Photoshop, Blender va boshqa dizaynga oid dasturlaridan foydalangan holda vizual
+                  dizayn va 3D modellar yaratishni o'rganasiz.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
-                  <a href="course_details/graphicdesigner-details.html" class="read-morer"><span>Batafsil</span><i class="bi bi-arrow-right"></i></a>
+                  <a href="course_details/graphicdesigner-details.html" class="read-morer"><span
+                      data-lang="readMore">Batafsil</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -367,15 +386,15 @@
               <img src="assets/img/courses/tailor2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Tikuvchilik</p>
-                  <p class="price">2 YIL</p>
+                  <p class="category" data-lang="tailor">Tikuvchilik</p>
+                  <p class="price" data-lang="years">2 YIL</p>
                 </div>
 
-                <h3><a href="course_details/tailor-details.html">Professional tikuvchilik</a></h3>
-                <p class="description">Tikuvchilikning asosiy va amaliy usullarini o‘rganasiz. Matolarni tanlash, o‘lchov olish, bichish va tikish
-                jarayonlarini bosqichma-bosqich egallaysiz.</p>
+                <h3><a href="course_details/tailor-details.html" data-lang="homeTailorHeader">Professional tikuvchilik</a></h3>
+                <p class="description" data-lang="homeTailorContext">Tikuvchilikning asosiy va amaliy usullarini o'rganasiz. Matolarni tanlash, o'lchov olish, bichish va tikish jarayonlarini bosqichma-bosqich egallaysiz.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
-                  <a href="course_details/tailor-details.html" class="read-morer"><span>Batafsil</span><i class="bi bi-arrow-right"></i></a>
+                  <a href="course_details/tailor-details.html" class="read-morer"><span
+                      data-lang="readMore">Batafsil</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -387,14 +406,16 @@
               <img src="assets/img/courses/bankmanagement.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Bank ishi nazoratchisi</p>
-                  <p class="price">2 YIL</p>
+                  <p class="category" data-lang="bankManagement">Bank ishi nazoratchisi</p>
+                  <p class="price" data-lang="years">2 YIL</p>
                 </div>
 
-                <h3><a href="course_details/bankmanagement-details.html">Bankdagi xolatni nazorat qilish</a></h3>
-                <p class="description">Bank operatsiyalarini nazorat qilish, moliyaviy hujjatlar bilan ishlash va ichki tartib-qoidalariga rioya qilishshi o'rganasiz.</p>
+                <h3><a href="course_details/bankmanagement-details.html" data-lang="homeBankHeader">Bankdagi xolatni nazorat qilish</a></h3>
+                <p class="description" data-lang="homeBankContext">Bank operatsiyalarini nazorat qilish, moliyaviy hujjatlar<br>bilan ishlash va
+                  ichki tartib-qoidalariga rioya qilishshi o'rganasiz.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
-                  <a href="course_details/bankmanagement-details.html" class="read-morer"><span>Batafsil</span><i class="bi bi-arrow-right"></i></a>
+                  <a href="course_details/bankmanagement-details.html" class="read-morer"><span
+                      data-lang="readMore">Batafsil</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -415,19 +436,15 @@
 
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/stagetwo.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/stageone.jpg" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>Walter White</h4>
-                <span>Veb-dasturlash</span>
-                <p>
-                  Tajribali dasturchi bo'lib, ko'plab loyihalarda ishtirok etgan. O'quvchilarga zamonaviy
-                  texnologiyalarni o'rgatadi.
-                </p>
+                <h4>Teshabayeva Nigoraxon</h4>
+                <span data-lang="stageOne">Direktor</span>
+                <p data-lang="stageOneContext">Direktor ta'lim muassasasining umumiy faoliyatiga rahbarlik qiladi, o'quv-tarbiya jarayonini, moliyaviy-xo'jalik ishlarini, kadrlar siyosatini va boshqaruv tizimini tashkil etish hamda rivojlantirish uchun to'liq mas'ul hisoblanadi.</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-telegram"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -435,19 +452,15 @@
 
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/stageone.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/stagetwo.jpg" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Raqamli marketing sohasida 10 yildan ortiq tajribaga ega mutaxassis. Muvaffaqiyatli kampaniyalar
-                  tashkil qilgan.
-                </p>
+                <h4>Sultonov Xayrullo</h4>
+                <span data-lang="stageTwo">O'quv ishlari bo'yicha direktor o'rin bosari</span>
+                <p data-lang="stageTwoContext">O'quv ishlari bo'yicha direktor o'rinbosari ta'lim muassasasida o'quv jarayonini rejalashtirish, tashkil etish, muvofiqlashtirish va nazorat qilish uchun mas'ul xodim.</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-telegram"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -457,16 +470,13 @@
             <div class="member">
               <img src="assets/img/team/stagethree.jpg" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Kontent yaratish</span>
-                <p>
-                  Professional kopirayter va kontent-strateg. Ko'plab brendlar bilan hamkorlik qilgan.
-                </p>
+                <h4>Tursunov Inomjon</h4>
+                <span data-lang="stageThree">Yoshlar ishlari bo'yicha direktor o'rin bosari</span>
+                <p data-lang="stageThreeContext">Yoshlar ishlari bo'yicha direktor o'rinbosari ta'lim muassasasida o'quvchilarning ma'naviy-axloqiy tarbiyasi, bo'sh vaqtini mazmunli tashkil etish hamda davlat yoshlar siyosatini amalga oshirish uchun mas'ul rahbar xodim.</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-telegram"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -487,62 +497,61 @@
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/favicon.png" alt="">
-            <span class="sitename">Farg'ona shahar 1-son texnikum</span>
+            <span class="sitename">Farg'ona shahar<br>1-son texnikum</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Yoshlik ko'chasi 18B</p>
-            <p>Farg'ona, O'zbekiston</p>
-            <p class="mt-3"><strong>Telefon:</strong> <span>+998 73 244 85 54</span></p>
+            <p data-lang="footerStreet">Yoshlik ko'chasi 18B</p>
+            <p data-lang="footerRegion">Farg'ona, O'zbekiston</p>
+            <p class="mt-3"><strong data-lang="footerPhone">Telefon:</strong> <span>+998 73 244 85 54</span></p>
             <p><strong>Email:</strong> <span>fergana-khm@umail.uz</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-telegram"></i></a>
             <a href="https://facebook.com/groups/443316034555479/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/khm_raqi_2_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/khm_raqi_2_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                class="bi bi-instagram"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Foydali havolalar</h4>
+          <h4 data-lang="footerLinks">Foydali havolalar</h4>
           <ul>
-            <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="about.html">Biz haqimizda</a></li>
-            <li><a href="courses.html">Yonalishlar</a></li>
-            <li><a href="events.html">Tadbirlar</a></li>
-            <li><a href="contact.html">Yordam</a></li>
+            <li><a href="#" data-lang="footerHome">Bosh sahifa</a></li>
+            <li><a href="about.html" data-lang="footerAbout">Biz haqimizda</a></li>
+            <li><a href="courses.html" data-lang="footerCourses">Yonalishlar</a></li>
+            <li><a href="events.html" data-lang="footerEvents">Tadbirlar</a></li>
+            <li><a href="contact.html" data-lang="footerHelp">Yordam</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Bizning xizmatlarimiz</h4>
+          <h4 data-lang="footerServices">Bizning xizmatlarimiz</h4>
           <ul>
-            <li><a href="contact.html">Veb-dizayn</a></li>
-            <li><a href="contact.html">Veb-dasturlash</a></li>
-            <li><a href="contact.html">Mahsulot boshqaruvi</a></li>
-            <li><a href="contact.html">Marketing</a></li>
-            <li><a href="contact.html">Grafik dizayn</a></li>
+            <li><a href="contact.html" data-lang="serviceWebDesign">Veb-dizayn</a></li>
+            <li><a href="contact.html" data-lang="serviceWebDev">Veb-dasturlash</a></li>
+            <li><a href="contact.html" data-lang="serviceProduct">Mahsulot boshqaruvi</a></li>
+            <li><a href="contact.html" data-lang="serviceMarketing">Marketing</a></li>
+            <li><a href="contact.html" data-lang="serviceGraphic">Grafik dizayn</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Bizning yangiliklar xatimiza obuna bo'ling</h4>
-          <p>Mahsulot va xizmatlarimiz haqidagi so'nggi yangiliklarni oling!</p>
+          <h4 data-lang="footerNewsletter">Bizning yangiliklar xatimiga obuna bo'ling</h4>
+          <p data-lang="footerNewsletterDesc">Mahsulot va xizmatlarimiz haqidagi so'nggi yangiliklarni oling!</p>
         </div>
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Mualliflik huquqi</span> <strong class="px-1 sitename">2025 Farg'ona Shahar 1-son Texnikum</strong> <span>Barcha huquqlar
-          himoyalangan</span></p>
-      <!-- <div class="credits">
-        Bu website o'zimizning ustozlarimizdan biri <a href="https://bootstrapmade.com/">Mo'mboyev Azizbek</a> tomonidan dasturlangan. O'quvchisi <a href="https://themewagon.com">Javohir Salohiddinov</a> o'z hissasini qo'shgan.
-      </div> -->
+      <p>© <span data-lang="footerCopyright">Mualliflik huquqi</span> <strong class="px-1 sitename">2025 Farg'ona Shahar
+          1-son Texnikum</strong> <span data-lang="footerRights">Barcha huquqlar himoyalangan</span></p>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -557,6 +566,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/translation.js"></script>
 
 </body>
 
