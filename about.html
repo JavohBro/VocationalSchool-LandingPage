@@ -35,26 +35,44 @@
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
+  
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/favicon.png" alt="">
         <h1>FARG'ONA SHAHAR <br>1-SON TEXNIKUM</h1>
       </a>
-
+  
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Bosh sahifa<br></a></li>
-          <li><a href="about.html" class="active">Haqida</a></li>
-          <li><a href="courses.html">Yo'nalishlar</a></li>
-          <li><a href="trainers.html">Ustozlar</a></li>
-          <li><a href="events.html">Tadbirlar</a></li>
-          <li><a href="contact.html">Aloqa</a></li>
+          <li><a href="index.html" data-lang="home">Bosh sahifa</a></li>
+          <li><a href="about.html" class="active" data-lang="kafedra">Kafedra</a></li>
+          <li class="dropdown">
+            <a href="#">
+              <span data-lang="courses">Yo'nalishlar</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="courses.html" data-lang="courseTypeOne">Kunduzgi ta'lim</a></li>
+              <li><a href="dual-study-courses.html" data-lang="courseTypeTwo">Dual ta'lim</a></li>
+              <li><a href="#" data-lang="courseTypeThree">Sirtqi ta'lim</a></li>
+              <li><a href="#" data-lang="courseTypeFour">Qisqa muddatli ta'lim</a></li>
+            </ul>
+          </li>
+          <li><a href="trainers.html" data-lang="teachers">Ustozlar</a></li>
+          <li><a href="events.html" data-lang="events">Tadbirlar</a></li>
+          <li><a href="contact.html" data-lang="contact">Aloqa</a></li>
+          <li>
+            <select class="form-select" id="languageSelect" onchange="changeLanguage(this.value)">
+              <option value="uzb">UZB</option>
+              <option value="eng">ENG</option>
+              <option value="rus">РУС</option>
+            </select>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="courses.html">Boshlash</a>
-
+  
+      <a class="btn-getstarted" href="https://my.edu.uz/" target="_blank" data-lang="apply">Roʻyxatdan oʻtish</a>
+  
     </div>
   </header>
 
@@ -66,9 +84,9 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <!-- <img src="assets/img/greenbg.jpg" alt=""> -->
-              <h1><i class="bi bi-chat-right-heart"></i> Biz haqimizda<br></h1>
-              <p class="mb-0">Bizning maqsadimiz – har bir yoshga zamonaviy va talabgor kasblarni o'rgatish orqali
+              <h1><i class="bi bi-collection"></i> <span data-lang="kafedraPageTitle">Kafedralar</span><br></h1>
+              <p class="mb-0" data-lang="kafedraPageDesc">Bizning maqsadimiz – har bir yoshga zamonaviy va talabgor
+                kasblarni o'rgatish orqali
                 ularni muvaffaqiyatli mutaxassisga aylantirish. Amaliy ta'lim va tajribali ustozlar yordamida
                 o'quvchilarimiz real ish bozoriga tayyor bo'lib chiqadi.</p>
             </div>
@@ -78,43 +96,159 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Bosh sahifa</a></li>
-            <li class="current">Biz haqimizda<br></li>
+            <li><a href="index.html" data-lang="home">Bosh sahifa</a></li>
+            <li class="current" data-lang="breadcrumbKafedra">Biz haqimizda</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
-
+    
     <!-- About Us Section -->
     <section id="about-us" class="section about-us">
-
+    
       <div class="container">
-
+    
         <div class="row gy-4">
-
+    
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/tillar.png" class="img-fluid" alt="">
           </div>
-
+    
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Bizning ta'lim markazimiz haqida</h3>
-            <p class="fst-italic">
-              Biz zamonaviy ta'lim usullarini qo'llagan holda, o'quvchilarga yuqori sifatli bilim berishga intilamiz.
+            <h3 data-lang="langDeptTitle">Tillar kafedrasi</h3>
+            <p class="fst-italic" data-lang="langDeptDesc">
+              Texnikumda o'quvchilarning milliy va xorijiy tillar bo'yicha kommunikativ kompetensiyasini, kasbiy lug'at va
+              muloqot
+              ko'nikmalarini shakllantirish, til o'qitish metodikasini takomillashtirish.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Amaliy mashg'ulotlar va real loyihalar asosida ta'lim.</span>
-              </li>
-              <li><i class="bi bi-check-circle"></i> <span>Tajribali va sohalarida yetakchi ustozlar jamoasi.</span>
-              </li>
-              <li><i class="bi bi-check-circle"></i> <span>O'quvchilarning ishga joylashishiga yordam berish va karyera
-                  maslahatlari.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="langDeptPoint1">O'quv rejalari va o'quv dasturlarining
+                  ijrosini nazorat qilish, kerakli tadbirlarni tashkil etish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="langDeptPoint2">Kafedra o'qituvchilari ishini
+                  rejalashtirish, darslarni aniqlash va kuzatish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="langDeptPoint3">Metodik maslahatlar tashkil etish,
+                  o'qituvchilarning malaka oshirishini yo'lga qo'yish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="langDeptPoint4">O'quv materiallari, darslik va metodik
+                  tavsiyalarni ishlab chiqish va yangilash.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="langDeptPoint5">Respublika va hududiy til siyosatiga
+                  muvofiq tadbirlarni amalga oshirish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="langDeptPoint6">Hujjatlar, hisobotlar va kafedra
+                  ma'lumotlarini taqdim etish.</span></li>
             </ul>
           </div>
-
+    
         </div>
-
+    
       </div>
-
+    
+    </section>
+    
+    <section id="about-us" class="section about-us">
+    
+      <div class="container">
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/maxsus.png" class="img-fluid" alt="">
+          </div>
+    
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-lang="specialDeptTitle">Maxsus fanlar kafedrasi</h3>
+            <p class="fst-italic" data-lang="specialDeptDesc">
+              Texnikumning kasbiy ta'lim yo'nalishlari bo'yicha maxsus fanlarning o'qitilishida amaliy kompetensiyalarni
+              shakllantirish, o'quv dasturlari va amaliyotlarni muvofiqlashtirish.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="specialDeptPoint1">Maxsus fanlar bo'yicha o'quv dasturlarini ishlab chiqish va amaliyot bilan bog'lash.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="specialDeptPoint2">Laboratoriyalar, ustaxonalar va jihozlarning o'quv jarayoniga mosligini ta'minlash.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="specialDeptPoint3">O'qituvchilar va ustoz-o'qituvchilar tajribasini muvofiqlashtirish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="specialDeptPoint4">Korxonalar bilan amaliy hamkorlikni yo'lga qo'yish, amaliyot joylarini tashkil etish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="specialDeptPoint5">Xavfsizlik va mehnat muhofazasi talablariga rioya etilishini nazorat qilish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="specialDeptPoint6">Hisobotlar tayyorlash va magistratura/sertifikatlash bo'yicha tashkiliy ishlar.</span></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <section id="about-us" class="section about-us">
+    
+      <div class="container">
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/aniq.png" class="img-fluid" alt="">
+          </div>
+    
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-lang="scienceDeptTitle">Aniq va tabiiy fanlar kafedrasi</h3>
+            <p class="fst-italic" data-lang="scienceDeptDesc">
+              Matematika, fizikа, kimyo va biologiya kabi aniq va tabiiy fanlarni texnikum dasturlari bilan uyg'unlashtirish
+              orqali
+              o'quvchilarning analitik va ilmiy fikrlash ko'nikmalarini rivojlantirish.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="scienceDeptPoint1">O'quv dasturlari va mashg'ulotlar
+                  jadvalini muvofiqlashtirish.</span>
+              </li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="scienceDeptPoint2">Laboratoriya asboblari va ochiq
+                  amaliy mashg'ulotlar tashkiloti.</span>
+              </li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="scienceDeptPoint3">Metodik ishlarni boshqarish va
+                  ilmiy tadqiqot ishlarini rag'batlantirish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="scienceDeptPoint4">O'qituvchilar malakasini oshirish
+                  bo'yicha ishlar tashkil etish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="scienceDeptPoint5">Darslar sifati va o'quv
+                  natijalarini monitoring qilish.</span></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <section id="about-us" class="section about-us">
+    
+      <div class="container">
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/raqi.png" class="img-fluid" alt="">
+          </div>
+    
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-lang="digitalDeptTitle">Raqamlari axborotlarni qayta ishlash kafedrasi</h3>
+            <p class="fst-italic" data-lang="digitalDeptDesc">
+              Raqamli texnologiyalar, dasturlash, ma'lumotlar bazalari va axborot tizimlari bo'yicha kasbiy
+              kompetensiyalarni
+              shakllantirish hamda soha talablari uchun kadrlar tayyorlash.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="digitalDeptPoint1">Dasturlash, ma'lumotlar bazasi va
+                  axborot tizimlari bo'yicha o'quv dasturlarini ishlab chiqish va yangilash.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="digitalDeptPoint2">Amaliy mashg'ulotlar (kompyuter
+                  sinflari, loyihalar) tashkil etish va jihozlash.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="digitalDeptPoint3">IT sanoati bilan hamkorlik
+                  o'rnatish, amaliyot va stajirovkalarni tashkil etish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="digitalDeptPoint4">O'qituvchilarning texnik va metodik
+                  malakasini oshirish.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span data-lang="digitalDeptPoint5">Axborot xavfsizligi va texnik
+                  jihozlarni ekspluatatsiya qilishni nazorat qilish.</span></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+      </div>
+    
     </section><!-- /About Us Section -->
 
     <!-- Counts Section -->
@@ -126,9 +260,9 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1229" data-purecounter-duration="1"
+              <span data-purecounter-start="0" data-purecounter-end="1265" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>O'quvchilar</p>
+              <p data-lang="statsStudents">O'quvchilar</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -136,7 +270,7 @@
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>Yo'nalishlar</p>
+              <p data-lang="statsCourses">Yo'nalishlar</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -144,7 +278,7 @@
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>Tadbirlar</p>
+              <p data-lang="statsEvents">Tadbirlar</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -152,7 +286,7 @@
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>Pedagog & Murabbiylar</p>
+              <p data-lang="statsTeachers">Pedagog & Murabbiylar</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -161,154 +295,6 @@
       </div>
 
     </section><!-- /Counts Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>O'quvchilar fikri</h2>
-        <p>Ular nima deyapti</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Bosh direktor &amp; Asoschi</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Kurs juda foydali bo'ldi. O'rganganlarimni darhol ishda qo'llay oldim. Ustozlar juda
-                      professional va doim yordam berishga tayyor.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Dizayner</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Ta'lim sifati yuqori darajada. Amaliy mashg'ulotlar juda ko'p va har bir savolga batafsil
-                      javob berishdi.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Do'kon egasi</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Kursni tugatgandan keyin o'z biznesimni rivojlantirishda katta yordam bo'ldi. Tavsiya
-                      qilaman!</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Frilanser</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Frilansda daromadimni bir necha barobar oshirdim. O'rgangan bilimlarim darhol natija
-                      berdi.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Tadbirkor</h4>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Eng yaxshi investitsiya – o'z biliminga sarmoya kiritish. Bu kurs aynan shunday imkoniyat
-                      yaratdi.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -318,58 +304,54 @@
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/favicon.png" alt="">
-            <span class="sitename">Farg'ona Shahar 1-son Texnikum</span>
+            <span class="sitename">Farg'ona shahar<br>1-son texnikum</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Yoshlik ko'chasi 18B</p>
-            <p>Farg'ona, O'zbekiston</p>
-            <p class="mt-3"><strong>Telefon:</strong> <span>+998 73 244 85 54</span></p>
+            <p data-lang="footerStreet">Yoshlik ko'chasi 18B</p>
+            <p data-lang="footerRegion">Farg'ona, O'zbekiston</p>
+            <p class="mt-3"><strong data-lang="footerPhone">Telefon:</strong> <span>+998 73 244 85 54</span></p>
             <p><strong>Email:</strong> <span>fergana-khm@umail.uz</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-telegram"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com/groups/443316034555479/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/khm_raqi_2_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                class="bi bi-instagram"></i></a>
           </div>
         </div>
   
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Foydali havolalar</h4>
+          <h4 data-lang="footerLinks">Foydali havolalar</h4>
           <ul>
-            <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="about.html">Biz haqimizda</a></li>
-            <li><a href="courses.html">Yonalishlar</a></li>
-            <li><a href="events.html">Tadbirlar</a></li>
-            <li><a href="contact.html">Yordam</a></li>
+            <li><a href="#" data-lang="footerHome">Bosh sahifa</a></li>
+            <li><a href="about.html" data-lang="footerAbout">Biz haqimizda</a></li>
+            <li><a href="courses.html" data-lang="footerCourses">Yonalishlar</a></li>
+            <li><a href="events.html" data-lang="footerEvents">Tadbirlar</a></li>
+            <li><a href="contact.html" data-lang="footerHelp">Yordam</a></li>
           </ul>
         </div>
   
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Bizning xizmatlarimiz</h4>
+          <h4 data-lang="footerServices">Bizning xizmatlarimiz</h4>
           <ul>
-            <li><a href="contact.html">Veb-dizayn</a></li>
-            <li><a href="contact.html">Veb-dasturlash</a></li>
-            <li><a href="contact.html">Mahsulot boshqaruvi</a></li>
-            <li><a href="contact.html">Marketing</a></li>
-            <li><a href="contact.html">Grafik dizayn</a></li>
+            <li><a href="contact.html" data-lang="serviceWebDesign">Veb-dizayn</a></li>
+            <li><a href="contact.html" data-lang="serviceWebDev">Veb-dasturlash</a></li>
+            <li><a href="contact.html" data-lang="serviceProduct">Mahsulot boshqaruvi</a></li>
+            <li><a href="contact.html" data-lang="serviceMarketing">Marketing</a></li>
+            <li><a href="contact.html" data-lang="serviceGraphic">Grafik dizayn</a></li>
           </ul>
         </div>
   
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Bizning yangiliklar xatimiza obuna bo'ling</h4>
-          <p>Mahsulot va xizmatlarimiz haqidagi so'nggi yangiliklarni oling!</p>
+          <h4 data-lang="footerNewsletter">Bizning yangiliklar xatimiga obuna bo'ling</h4>
+          <p data-lang="footerNewsletterDesc">Mahsulot va xizmatlarimiz haqidagi so'nggi yangiliklarni oling!</p>
         </div>
       </div>
     </div>
   
     <div class="container copyright text-center mt-4">
-      <p>© <span>Mualliflik huquqi</span> <strong class="px-1 sitename">2025 Farg'ona Shahar 1-son Texnikum</strong>
-        <span>Barcha huquqlar
-          himoyalangan</span></p>
-      <!-- <div class="credits">
-          Bu website o'zimizning ustozlarimizdan biri <a href="https://bootstrapmade.com/">Mo'mboyev Azizbek</a> tomonidan dasturlangan. O'quvchisi <a href="https://themewagon.com">Javohir Salohiddinov</a> o'z hissasini qo'shgan.
-        </div> -->
+      <p>© <span data-lang="footerCopyright">Mualliflik huquqi</span> <strong class="px-1 sitename">2025 Farg'ona Shahar
+          1-son Texnikum</strong> <span data-lang="footerRights">Barcha huquqlar himoyalangan</span></p>
     </div>
   
   </footer>
@@ -392,6 +374,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/translation.js"></script>
 
 </body>
 
