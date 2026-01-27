@@ -531,6 +531,33 @@ const translations = {
     professionalModulesValue: "5 ta",
     electiveModules: "Tanlov modullar",
     electiveModulesValue: "4 ta",
+
+    ///////////////////////////
+    // Names
+    mainName1: "Teshabayeva Nigoraxon",
+    mainName2: "Sultonov Xayrullo",
+    mainName3: "Tursunov Inomjon",
+
+    teacherName1: "Mansurova Gulchexra",
+    teacherName2: "Ashurova Oftobxon",
+    teacherName3: "Xoshimova Xulkaroy",
+    teacherName4: "Mo'mboyev Azizbek",
+    teacherName5: "Axmedova Xusnida",
+    teacherName6: "Masharipov Asadbek",
+    teacherName7: "Rsutamova Nodiraxon",
+    teacherName8: "Ismoilova Shoxsanam",
+    teacherName9: "Yursunbekov Ilxomjon",
+    teacherName10: "Xoshimova Shohistaxon",
+    teacherName11: "To'lanova Sarvinoz",
+    teacherName12: "Omonova Ezoza",
+    teacherName13: "Umarova Moxinur",
+    teacherName14: "Teshaboyev Ravshanbek",
+    teacherName15: "Abdurazoqova Sadoqat",
+    teacherName16: "Axmadaliyeva Dilfuza",
+    teacherName17: "Ikmatullayeva Nilufar",
+    teacherName18: "Qodirova Dilnoza",
+    teacherName19: "Sobirova Umida",
+    teacherName20: "Mo'minov Ozodbek",
   },
   
   eng: {
@@ -1085,6 +1112,33 @@ const translations = {
     professionalModulesValue: "5 modules",
     electiveModules: "Elective Modules",
     electiveModulesValue: "4 modules",
+
+    ///////////////////////////
+    // Names
+    mainName1: "Teshabayeva Nigoraxon",
+    mainName2: "Sultonov Xayrullo",
+    mainName3: "Tursunov Inomjon",
+
+    teacherName1: "Mansurova Gulchexra",
+    teacherName2: "Ashurova Oftobxon",
+    teacherName3: "Xoshimova Xulkaroy",
+    teacherName4: "Mo'mboyev Azizbek",
+    teacherName5: "Axmedova Xusnida",
+    teacherName6: "Masharipov Asadbek",
+    teacherName7: "Rsutamova Nodiraxon",
+    teacherName8: "Ismoilova Shoxsanam",
+    teacherName9: "Yursunbekov Ilxomjon",
+    teacherName10: "Xoshimova Shohistaxon",
+    teacherName11: "To'lanova Sarvinoz",
+    teacherName12: "Omonova Ezoza",
+    teacherName13: "Umarova Moxinur",
+    teacherName14: "Teshaboyev Ravshanbek",
+    teacherName15: "Abdurazoqova Sadoqat",
+    teacherName16: "Axmadaliyeva Dilfuza",
+    teacherName17: "Ikmatullayeva Nilufar",
+    teacherName18: "Qodirova Dilnoza",
+    teacherName19: "Sobirova Umida",
+    teacherName20: "Mo'minov Ozodbek",
   },
   
   rus: {
@@ -1614,6 +1668,33 @@ const translations = {
     professionalModulesValue: "5 модулей",
     electiveModules: "Элективные модули",
     electiveModulesValue: "4 модуля",
+
+    //////////////////////////////////////
+    // Имена
+    mainName1: "Тешабаева Нигораксон",
+    mainName2: "Султонов Хайрулло",
+    mainName3: "Турсунов Иномжон",
+
+    teacherName1: "Мансурова Гульчехра",
+    teacherName2: "Ашурова Офтобхон",
+    teacherName3: "Хошимова Хулларой",
+    teacherName4: "Момбоев Азизбек",
+    teacherName5: "Ахмедова Хуснида",
+    teacherName6: "Машарипов Асадбек",
+    teacherName7: "Рсутамова Нодирахон",
+    teacherName8: "Исмоилова Шоксанам",
+    teacherName9: "Юрсунбеков Илксомджон",
+    teacherName10: "Хошимова Шохистахон",
+    teacherName11: "Толанова Сарвиноз",
+    teacherName12: "Омонова Эзоза",
+    teacherName13: "Умарова Моксинур",
+    teacherName14: "Тешабоев Равшанбек",
+    teacherName15: "Абдуразокова Садокат",
+    teacherName16: "Ахмадалиева Дильфуза",
+    teacherName17: "Икматуллаева Нилуфар",
+    teacherName18: "Годирова Дильноза",
+    teacherName19: "Собирова Умида",
+    teacherName20: "Моъминов Озодбек",
   }
 };
 
