@@ -200,6 +200,7 @@ const translations = {
     subjectStage2Head: "2-bosqich bo'lim boshlig'i",
     subjectPsychologist: "Psixolog",
     subjectInformatics2: "Informatika va axborot texnologiyalari",
+    subjectInformatics3: "Rastr va vektor grafikasi",
     
     // Teacher Descriptions
     teacherPhysicsDesc: "Fizika sohasida ko'p yillik tajribaga ega mutaxassis. Talabalarga fizika qonunlarini sodda va tushunarli tarzda o'rgatadi.",
@@ -222,6 +223,7 @@ const translations = {
     teacherStage2HeadDesc: "2-bosqich bo'limida tajribali rahbar. Bo'lim ishlarini samarali boshqarib, o'quv jarayonining sifatini ta'minlaydi.",
     teacherPsychologistDesc: "Tajribali psixolog. Talabalar va o'quvchilarning ruhiy holatini qo'llab-quvvatlash va rivojlantirishga yordam beradi.",
     teacherInformaticsDesc2: "Informatika va axborot texnologiyalari sohasida tajribali ustoz. O'quvchilarga raqamli vositalar va zamonaviy texnologiyalarni amaliy tarzda o'rgatadi.", 
+    teacherInformaticsDesc3: "Rastr va vektor grafika yo'nalishida tajribali mutaxassis. O'quvchilarga grafik dizayn asoslarini amaliy mashg'ulotlar orqali o'rgatadi.",
     
     /////////////////////////// Events
     // Events Page
@@ -558,6 +560,17 @@ const translations = {
     teacherName18: "Qodirova Dilnoza",
     teacherName19: "Sobirova Umida",
     teacherName20: "Mo'minov Ozodbek",
+    teacherName21: "Umirzaqova Nargiza",
+    teacherName22: "Abduraxmonov Rustam",
+    teacherName23: "Sharopova Gulnoza",
+    subjectInformatics5: "Informatika va axborot texnologiyalari",
+    teacherInformaticsDesc5: "Informatika va axborot texnologiyalari sohasida tajribali ustoz. O'quvchilarga raqamli vositalar va zamonaviy texnologiyalarni amaliy tarzda o'rgatadi.",
+    
+    // Teacher 22 - Abduraxmonov Rustam
+    subjectInformatics4: "Ta'lim ustasi",
+    teacherInformaticsDesc4: "Ta'lim jarayonida yuqori mahoratga ega ustoz. O'quvchilarning bilimga bo'lgan qiziqishini oshirishga e'tibor beradi.",
+    subjectInformatics3: "Растровая и векторная графика",
+    teacherInformaticsDesc3: "Опытный специалист в области растровой и векторной графики. Обучает студентов основам графического дизайна через практические занятия.",
   },
   
   eng: {
@@ -1139,6 +1152,17 @@ const translations = {
     teacherName18: "Qodirova Dilnoza",
     teacherName19: "Sobirova Umida",
     teacherName20: "Mo'minov Ozodbek",
+    teacherName21: "Umirzaqova Nargiza",
+    teacherName22: "Abduraxmonov Rustam",
+    teacherName23: "Sharopova Gulnoza",
+    subjectInformatics5: "IT and Information Technologies",
+    teacherInformaticsDesc5: "Experienced teacher in IT and information technologies. Teaches students digital tools and modern technologies in a practical way.",
+    
+    // Teacher 22 - Abduraxmonov Rustam
+    subjectInformatics4: "Education Master",
+    teacherInformaticsDesc4: "Teacher with high expertise in the educational process. Focuses on increasing students' interest in knowledge.",
+    subjectInformatics3: "Raster and Vector Graphics",
+    teacherInformaticsDesc3: "Experienced specialist in raster and vector graphics. Teaches students graphic design fundamentals through practical exercises.",
   },
   
   rus: {
@@ -1695,6 +1719,15 @@ const translations = {
     teacherName18: "Годирова Дильноза",
     teacherName19: "Собирова Умида",
     teacherName20: "Моъминов Озодбек",
+    teacherName21: "Умирзакова Наргиза",
+    teacherName22: "Абдурахманов Рустам",
+    teacherName23: "Шаропова Гульноза",
+    subjectInformatics5: "ИТ и информационные технологии",
+    teacherInformaticsDesc5: "Опытный преподаватель в области ИТ и информационных технологий. Обучает студентов цифровым инструментам и современным технологиям в практической форме.",
+    
+    // Teacher 22 - Abduraxmonov Rustam
+    subjectInformatics4: "Мастер образования",
+    teacherInformaticsDesc4: "Преподаватель с высоким мастерством в образовательном процессе. Уделяет внимание повышению интереса студентов к знаниям.",
   }
 };
 
