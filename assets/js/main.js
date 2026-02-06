@@ -134,3 +134,11 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+const modal = document.getElementById('videoModal');
+const video = document.getElementById('modalVideo');
+
+modal.addEventListener('hidden.bs.modal', () => {
+  video.pause();
+  video.currentTime = 0; // reset to start
+});

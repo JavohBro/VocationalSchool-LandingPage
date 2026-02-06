@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+A modern, responsive landing page developed for **Fergana Technicum №1**, a vocational school focused on practical and technical education. The website presents key information clearly, improves the institution’s online presence, and provides a solid foundation for future expansion.
 
-Template Name: Mentor
-Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Developper/Author: Javohir Salohiddinov
+Personal Website: https://javohirsalohiddinov.com
+
+Contact me anytime.
