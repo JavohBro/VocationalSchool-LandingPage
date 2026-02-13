@@ -558,19 +558,17 @@ const translations = {
     teacherName16: "Axmadaliyeva Dilfuza",
     teacherName17: "Ikmatullayeva Nilufar",
     teacherName18: "Qodirova Dilnoza",
-    teacherName19: "Sobirova Umida",
+    teacherName19: "Saydaliyeva Umida",
     teacherName20: "Mo'minov Ozodbek",
     teacherName21: "Umirzaqova Nargiza",
     teacherName22: "Abduraxmonov Rustam",
     teacherName23: "Sharopova Gulnoza",
-    subjectInformatics5: "Informatika va axborot texnologiyalari",
+    subjectInformatics5: "Axborot texnologiyalari",
     teacherInformaticsDesc5: "Informatika va axborot texnologiyalari sohasida tajribali ustoz. O'quvchilarga raqamli vositalar va zamonaviy texnologiyalarni amaliy tarzda o'rgatadi.",
     
     // Teacher 22 - Abduraxmonov Rustam
-    subjectInformatics4: "Ta'lim ustasi",
+    subjectInformatics4: "Bosh usta",
     teacherInformaticsDesc4: "Ta'lim jarayonida yuqori mahoratga ega ustoz. O'quvchilarning bilimga bo'lgan qiziqishini oshirishga e'tibor beradi.",
-    subjectInformatics3: "Растровая и векторная графика",
-    teacherInformaticsDesc3: "Опытный специалист в области растровой и векторной графики. Обучает студентов основам графического дизайна через практические занятия.",
   },
   
   eng: {
@@ -622,7 +620,7 @@ const translations = {
     bankManagement: "Banking Manager",
     graphicDesigner: "Computer Graphics and Design",
     computerSciense: "Digital Information Processing Engineer",
-    electroEngineer: "Electrical Engineer",
+    electroEngeneer: "Electrician",
     automechanic: "Automotive Engine Diagnostics and Repair",
     welder: "Welder",
     cook: "Cooking",
@@ -1150,16 +1148,16 @@ const translations = {
     teacherName16: "Axmadaliyeva Dilfuza",
     teacherName17: "Ikmatullayeva Nilufar",
     teacherName18: "Qodirova Dilnoza",
-    teacherName19: "Sobirova Umida",
+    teacherName19: "Saydaliyeva Umida",
     teacherName20: "Mo'minov Ozodbek",
     teacherName21: "Umirzaqova Nargiza",
     teacherName22: "Abduraxmonov Rustam",
     teacherName23: "Sharopova Gulnoza",
-    subjectInformatics5: "IT and Information Technologies",
+    subjectInformatics5: "Information Technologies",
     teacherInformaticsDesc5: "Experienced teacher in IT and information technologies. Teaches students digital tools and modern technologies in a practical way.",
     
     // Teacher 22 - Abduraxmonov Rustam
-    subjectInformatics4: "Education Master",
+    subjectInformatics4: "Head Master",
     teacherInformaticsDesc4: "Teacher with high expertise in the educational process. Focuses on increasing students' interest in knowledge.",
     subjectInformatics3: "Raster and Vector Graphics",
     teacherInformaticsDesc3: "Experienced specialist in raster and vector graphics. Teaches students graphic design fundamentals through practical exercises.",
@@ -1214,7 +1212,7 @@ const translations = {
     bankManagement: "Банковское управление",
     graphicDesigner: "Компьютерная графика и дизайн",
     computerSciense: "Инженер по цифровой обработке информации",
-    electroEngeneer: "Инженер-электрик",
+    electroEngeneer: "Электромонтер",
     automechanic: "Диагностика и ремонт автомобильных двигателей",
     welder: "Сварщик",
     cook: "Кулинари",
@@ -1695,7 +1693,7 @@ const translations = {
 
     //////////////////////////////////////
     // Имена
-    mainName1: "Тешабаева Нигораксон",
+    mainName1: "Тешабаева Нигорахон",
     mainName2: "Султонов Хайрулло",
     mainName3: "Турсунов Иномжон",
 
@@ -1717,17 +1715,19 @@ const translations = {
     teacherName16: "Ахмадалиева Дильфуза",
     teacherName17: "Икматуллаева Нилуфар",
     teacherName18: "Годирова Дильноза",
-    teacherName19: "Собирова Умида",
+    teacherName19: "Саидалиева Умида",
     teacherName20: "Моъминов Озодбек",
     teacherName21: "Умирзакова Наргиза",
     teacherName22: "Абдурахманов Рустам",
     teacherName23: "Шаропова Гульноза",
-    subjectInformatics5: "ИТ и информационные технологии",
+    subjectInformatics5: "Информационные технологии",
     teacherInformaticsDesc5: "Опытный преподаватель в области ИТ и информационных технологий. Обучает студентов цифровым инструментам и современным технологиям в практической форме.",
     
     // Teacher 22 - Abduraxmonov Rustam
-    subjectInformatics4: "Мастер образования",
+    subjectInformatics4: "Старшый мастер",
     teacherInformaticsDesc4: "Преподаватель с высоким мастерством в образовательном процессе. Уделяет внимание повышению интереса студентов к знаниям.",
+    subjectInformatics3: "Растровая и векторная графика",
+    teacherInformaticsDesc3: "Опытный специалист в области растровой и векторной графики. Обучает студентов основам графического дизайна через практические занятия.",
   }
 };
 
